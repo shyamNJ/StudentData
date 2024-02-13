@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body{
+		background-color: lightseagreen;
+	}
+	h3{
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	
+	<h3>update student</h3>
+	
+	<form action="update" method="post">
+		
+		<label>Exam No:</label>
+		<input type="text" required name="examNo" readonly th:value="${stu.examNo}">
+		<br><br>
+		
+		<label>First_Name :</label>
+		<input type="text" required name="firstName" th:value="${stu.firstName}">
+		<br><br>
+		
+		<label>Last_Name :</label>
+		<input type="text" required name="lastName" th:value="${stu.lastName}">
+		<br><br>
+		
+		<label>Age :</label>
+		<input type="number" required name="age" th:value="${stu.age}">
+		<br><br>
+		
+		<button type="submit">Update</button>
+		
+	</form>
+	
+	
+
+</body>
+</html>
